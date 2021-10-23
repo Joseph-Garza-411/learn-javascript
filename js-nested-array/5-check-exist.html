@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js Nested Array</title>
+    <script>
+    // (A) NESTED ARRAY
+    var arr = [
+      ["first", "second"],
+      ["third", "forth"]
+    ];
+
+    // (B) LOOP NESTED ARRAY
+    function checker (entry, find) {
+      let result = false;
+      for (let el of entry) {
+        if (Array.isArray(el)) {
+          result = checker(el, find);
+        } else {
+          if (el == find) {
+            result = true;
+            break;
+          }
+        }
+      }
+      return result;
+    }
+    var exist = checker(arr, "third");
+    console.log(exist); // true
+    </script>
+  </head>
+  <body></body>
+</html>

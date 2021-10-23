@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js Nested Array</title>
+    <script>
+    // (A) NESTED ARRAY
+    var arr = [
+      // FIRST - STRING
+      "Foo Bar",
+      // SECOND - NUMBER
+      123,
+      // THIRD - BOOLEAN
+      true,
+      // FORTH - ARRAY
+      ["Hello", "World"],
+      // FIFTH - OBJECT
+      { name : "Jon", gender : "M" },
+      // SIXTH - FUNCTION
+      (text) => { console.log(text); }
+    ];
+
+    // (B) THE ELEMENTS
+    console.log(arr[0]); // Foo Bar
+    console.log(arr[1]); // 123
+    console.log(arr[2]); // true
+    console.log(arr[3]); // ["Hello", "World"]
+    console.log(arr[4]); // { name : "Jon", gender : "M" }
+    console.log(arr[5]); // (text) => { console.log(text); }
+    </script>
+  </head>
+  <body></body>
+</html>

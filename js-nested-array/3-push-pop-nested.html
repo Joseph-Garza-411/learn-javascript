@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js Nested Array</title>
+    <script>
+    // (A) NESTED ARRAY
+    var arr = [
+      ["Apple", "Banana"],
+      ["Hello", "World"]
+    ];
+
+    // (B) POP - REMOVE LAST ELEMENT
+    arr.pop();
+    console.log(arr); // [["Apple", "Banana"]]
+
+    // (C) PUSH - ADD ELEMENT
+    arr.push(["Job", "Jon"]);
+    console.log(arr); // [["Apple", "Banana"], ["Job", "Jon"]]
+
+    // (D) POP NESTED
+    arr[1].pop();
+    console.log(arr); // [["Apple", "Banana"], ["Job"]]
+
+    // (E) PUSH NESTED
+    arr[1].push("Joy");
+    console.log(arr); // [["Apple", "Banana"], ["Job", "Joy"]]
+    </script>
+  </head>
+  <body></body>
+</html>

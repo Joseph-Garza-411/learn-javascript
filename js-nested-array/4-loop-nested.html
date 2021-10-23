@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js Nested Array</title>
+    <script>
+    // (A) NESTED ARRAY
+    var arr = [
+      ["first", "second"],
+      ["third", "forth"]
+    ];
+
+    // (B) LOOP NESTED ARRAY
+    function looper (entry) {
+      for (let el of entry) {
+        if (Array.isArray(el)) { looper(el); }
+        else { console.log(el); }
+      }
+    };
+    looper(arr);
+    </script>
+  </head>
+  <body></body>
+</html>

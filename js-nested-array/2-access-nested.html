@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Js Nested Array</title>
+    <script>
+    // (A) NESTED ARRAY
+    var arr = [
+      ["Foo", "Bar"],
+      { name : "Jon", gender : "M" },
+      (text) => { console.log(text); }
+    ];
+
+    // (B) FIRST ELEMENT - ARR[0] IS AN ARRAY
+    console.log(arr[0][0]); // Foo
+    console.log(arr[0][1]); // Bar
+
+    // (C) SECOND ELEMENT - ARR[1] IS AN OBJECT
+    console.log(arr[1]['name']); // Jon
+    console.log(arr[1]['gender']); // M
+
+    // (D) THIRD ELEMENT - ARR[2] IS A FUNCTION
+    arr[2]("TEST!"); // TEST!
+    </script>
+  </head>
+  <body></body>
+</html>
