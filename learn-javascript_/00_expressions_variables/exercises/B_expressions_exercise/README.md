@@ -1,4 +1,5 @@
-# Express Yourself
+
+ Express Yourself
 
 _Expressions_ are the building blocks of programs. We can combine _values_ with _operators_ to
 compose an expression. An _expression_ evaluates to some _value_.
